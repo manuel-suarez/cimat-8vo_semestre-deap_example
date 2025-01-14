@@ -19,7 +19,14 @@ X_START = -4
 X_END = 4
 X_STEP = 0.5
 
-from sampling import sample
+
+def unknown(x):
+    return 1.3 * x + 1.9 * x**2 - 4.2 * x**3 + 5.0
+
+
+def sample(inputs):
+    return np.array([unknown(inp) + random.normal(5.0) for inp in inputs])
+
 
 # Initial observations
 X = np.array([x for x in np.arange(X_START, X_END, X_STEP)])
