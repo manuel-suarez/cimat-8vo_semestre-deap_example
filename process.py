@@ -1,2 +1,2 @@
 def unknown(x):
-    return -4.2 * x**3 + 1.9 * x**2 + 1.3 * x + 5.0
+    return 1.3 * x + 1.9 * x**2 - 4.2 * x**3 + 5.0
